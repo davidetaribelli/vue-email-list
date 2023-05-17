@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul{
+    border: 3px solid steelblue;
+    border-radius: 1em;
+    padding: 2rem;
+}
+
+.container ul button{
+    padding: 0.5em;
+    font-size: 2rem;
+    background-color: steelblue;
+    color: #1b1b1b;
+    border: 0;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+li{
+    margin-top: 1em;
+    list-style-type: none;
+    font-size: 1.5rem;
+}

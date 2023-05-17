@@ -5,6 +5,7 @@ const { createApp } = Vue
       return {
         emailRandom:'https://flynn.boolean.careers/exercises/api/random/mail',
         emailArray: [],
+        buttonClick: false,
       }
     },
     methods:{
@@ -14,7 +15,8 @@ const { createApp } = Vue
                     const email = emailR.data.response
                     this.emailArray.push(email);
                 }); 
-            } 
+            }
+            this.buttonClick = true;
         },
     },
     mounted(){

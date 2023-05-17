@@ -11,9 +11,9 @@
 </head>
 <body>
     
-    <div id="app">
+    <div id="app" class="container">
         <ul>
-            <button @click="pushArray">Cliccami</button>
+            <button v-show="buttonClick == false" @click="pushArray">Cliccami</button>
             <li v-for="(element, i) in emailArray">
                 {{element}}
             </li>
