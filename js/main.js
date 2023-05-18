@@ -10,6 +10,7 @@ const { createApp } = Vue
     },
     methods:{
         pushArray(){
+          this.emailArray = [];
             for (let i = 0; i < 10; i++) {
                 axios.get(this.emailRandom).then((emailR) => {
                     const email = emailR.data.response
